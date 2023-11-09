@@ -1,0 +1,9 @@
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+}

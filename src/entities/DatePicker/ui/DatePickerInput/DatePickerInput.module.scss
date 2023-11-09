@@ -1,0 +1,20 @@
+.DatePicker {
+    position: relative;
+    display: inline-block;
+}
+
+.DatePicker__input {
+    border: 1px solid lightgrey;
+    padding: 6px 12px;
+    border-radius: 6px;
+    width: 170px;
+}
+
+.DatePicker__input:focus {
+    outline: none;
+}
+
+.DatePicker__inputInvalid {
+    border-color: red;
+    color: red;
+}

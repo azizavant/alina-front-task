@@ -1,0 +1,31 @@
+.Sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    transition: width 0.5s, min-width 0.5s;
+    width: 82px;
+    overflow-y: auto;
+    padding-bottom: 32px;
+}
+
+.SidebarCollapsed {
+    width: 350px;
+}
+
+// Эксперимент с прокруткой
+
+.Sidebar::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+    background: #3538CD;
+}
+
+.Sidebar::-webkit-scrollbar-track {
+    background: #EEF4FF;
+}
+

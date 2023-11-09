@@ -1,0 +1,59 @@
+.root {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 3px;
+    position: relative;
+    background-color: white;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        height: 40px;
+        min-width: 40px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        color: gray;
+
+    }
+
+    :global {
+        .selected {
+            a {
+                background-color: #EEF4FF;
+                color: blue;
+            }
+        }
+
+        .previous a {
+            position: absolute;
+            left: 30px;
+            width: 150px !important;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid lightgray;
+            color: black;
+        }
+
+        .next a {
+            position: absolute;
+            right: 30px;
+            width: 150px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid lightgray;
+            color: black;
+        }
+    }
+}
+
